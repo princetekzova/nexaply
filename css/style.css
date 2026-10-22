@@ -1,4 +1,4 @@
-/* Nexaply Enterprises — site styles (v0.3) */
+/* Nexaply Enterprises — site styles (v0.8) */
 /* Layout: left-aligned, 1120px measure; plywood cross-section stripes and flat line illustrations as the graphic language. */
 :root{
   --bg:#f4f6f8; --surface:#ffffff; --ink:#16273f; --ink-2:#2b3b52; --fg:#1d2733; --muted:#5b6878; --line:#d8dee6;
@@ -200,3 +200,56 @@ footer a{display:block;text-decoration:none;color:var(--muted);margin-bottom:6px
 .fab svg{width:22px;height:22px;fill:#fff}
 @media (prefers-reduced-motion:no-preference){.btn,.fab{transition:filter .15s}}
 .scene img{width:100%;height:auto;display:block;border-radius:8px}
+
+/* product pages (v0.8) */
+.phero{padding-block:clamp(28px,4vw,48px) clamp(32px,5vw,56px);background:linear-gradient(180deg,var(--sky) 0%,var(--bg) 80%)}
+.crumb{font-size:.9rem;color:var(--muted);margin-bottom:16px}
+.crumb a{color:var(--muted)}
+.phero .std,.pcard .std{font-family:var(--font-display);font-weight:600;font-size:.82rem;color:var(--amber-2);letter-spacing:.04em;display:block;margin-bottom:8px}
+.phero .lede{margin-top:14px}
+.pgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+@media (max-width:860px){.pgrid{grid-template-columns:1fr}}
+.pfig{margin:0;min-width:0}
+.pfig img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--line);aspect-ratio:4/3;object-fit:cover;background:var(--line)}
+.pfig.main img{aspect-ratio:3/2}
+.pfig figcaption{font-size:.88rem;color:var(--muted);margin-top:8px}
+.pfig .cr{display:block;font-size:.78rem;opacity:.85;margin-top:2px}
+.pbody{padding-top:clamp(28px,4vw,48px)}
+.pbody h2{font-size:clamp(1.3rem,2.4vw,1.7rem);margin-top:34px}
+.pbody h2:first-child{margin-top:0}
+.pcols{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:start}
+@media (max-width:900px){.pcols{grid-template-columns:1fr}}
+.pcols aside{display:grid;gap:18px;min-width:0}
+.pbody .tbl{margin-top:16px}
+.spec-t table{min-width:0}
+.spec-t th{width:34%;background:color-mix(in srgb,var(--line) 25%,var(--surface));font-size:.92rem}
+.pcta{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;background:var(--band);color:var(--band-fg);border-radius:8px;padding:22px}
+.pcta>div{flex:1 1 320px}
+.pcta h3{color:var(--band-fg)}
+.pcta p{color:color-mix(in srgb,var(--band-fg) 75%,transparent);margin-top:4px}
+.pcta .btn.alt{color:var(--band-fg);border-color:var(--band-fg)}
+.pchips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.pchip{display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:10px 14px;text-decoration:none;font-weight:600;color:var(--ink)}
+.pchip .edge{width:26px;height:10px;border-radius:2px;background:repeating-linear-gradient(90deg,var(--ply1) 0 3px,var(--ply3) 3px 5px,var(--ply2) 5px 8px,var(--ply4) 8px 10px)}
+.pchip .edge.d3{background:repeating-linear-gradient(90deg,var(--ply2) 0 10px,var(--ply4) 10px 12px)}
+.pchip .edge.film{background:linear-gradient(90deg,#4a3a2a,#2f2419)}
+.pchip .edge.fj{background:repeating-linear-gradient(90deg,var(--ply1) 0 12px,var(--ply3) 12px 13px)}
+.pcards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+@media (max-width:980px){.pcards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.pcards{grid-template-columns:1fr}}
+.pcard{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;text-decoration:none;color:var(--fg);min-width:0}
+.pcard img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--line)}
+.pcard>div{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pcard .spec{font-size:.92rem;color:var(--muted)}
+.pcard .spec b{color:var(--fg)}
+.pcard .more{margin-top:auto;font-weight:600;color:var(--amber-2);font-size:.92rem}
+.pcard:hover{border-color:var(--amber)}
+.card a.more{margin-top:auto;font-weight:600;color:var(--amber-2);font-size:.92rem;text-decoration:none}
+.card a.photo{display:block;margin:-20px -20px 4px;border-radius:6px 6px 0 0;overflow:hidden}
+.card a.photo img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;background:var(--line)}
+.legal a{display:inline;color:var(--muted)}
+footer .wrap.legal{display:flex}
+.pcols>div{min-width:0}
+@media (max-width:480px){header .wrap{gap:10px}.brand b{font-size:1.2rem}.brand span{font-size:.95rem}.hdr-cta .btn{padding:10px 12px;font-size:.9rem}}
+.pcard img{height:auto}
+.pbody table{min-width:0}

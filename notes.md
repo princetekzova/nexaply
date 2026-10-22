@@ -21,3 +21,14 @@ Point nexaply.in at the host; the site is a single page with anchors (#products,
 
 ## Editing prices
 Price table: index.html, section id="prices". Estimator: js/main.js, `mid` = mid-point ₹/sq ft per grade and thickness.
+
+## v0.8 – product pages (Oct 2026)
+- New folder products/: index.html (all products + grade comparison) and one page per product:
+  mr-plywood, bwr-plywood, marine-plywood, block-board, flush-doors, shuttering-plywood,
+  commercial-packing-plywood, rubberwood-boards. Each has specs, sizes, thickness/truckload table,
+  uses, loading checks, FAQ, quote buttons and links to other products.
+- Photos in assets/photos/ are freely licensed Wikimedia Commons images (CC0 / CC BY / CC BY-SA);
+  each shows its credit under the photo, and credits.html lists author, licence and source.
+  Keep the credits if photos are reused. Replace with your own mill/stock photos when available.
+- Pages are generated from ../gen_products.py + ../photos.json (edit data there, re-run).
+- Home page product cards now have photos and "Full specifications" links; footer links to product pages.
